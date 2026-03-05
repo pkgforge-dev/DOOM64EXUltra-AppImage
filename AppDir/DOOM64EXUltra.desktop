@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Game;
+Icon=DOOM64EXUltra
+Name=DOOM64EXUltra
+Type=Application
+Exec=DOOM64EXUltra
+Terminal=false
+StartupWMClass=
+X-AppImage-Version=9ac8367d
