@@ -7,4 +7,3 @@ Comment="A fork of DOOM64EX+ with new stuff and fixes"
 Exec=DOOM64EXUltra
 Terminal=false
 StartupWMClass=DOOM64EXUltra
-X-AppImage-Version=9ac8367d
