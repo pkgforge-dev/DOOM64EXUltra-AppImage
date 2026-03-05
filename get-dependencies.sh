@@ -29,9 +29,9 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./DOOM64EXUltra
-#mkdir -p build && cd build
 cmake . \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS="-Wno-implicit-function-declaration"
 make -j$(nproc)
 mv -v DOOM64EXUltra ../AppDir/bin
 mv -v doom64ex-ultra.wad ../AppDir/bin
