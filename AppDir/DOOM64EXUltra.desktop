@@ -3,6 +3,7 @@ Categories=Game;
 Icon=DOOM64EXUltra
 Name=DOOM64EXUltra
 Type=Application
+Comment="A fork of DOOM64EX+ with new stuff and fixes"
 Exec=DOOM64EXUltra
 Terminal=false
 StartupWMClass=
