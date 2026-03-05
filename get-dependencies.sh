@@ -10,6 +10,8 @@ pacman -Syu --noconfirm \
     cmake      \
     fluidsynth \
     libdecor   \
+    pipewire-audio \
+    pipewire-jack \
     portmidi   \
     sdl3
 
