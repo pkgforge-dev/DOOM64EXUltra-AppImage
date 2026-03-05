@@ -9,7 +9,8 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake      \
     fluidsynth \
-    libdecor
+    libdecor   \
+    portmidi
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
