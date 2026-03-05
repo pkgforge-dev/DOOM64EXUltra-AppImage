@@ -1,0 +1,4 @@
+#!/bin/sh
+dir=$DATADIR/doom64ex-ultra
+mkdir -p "$dir"
+cd "$dir"
