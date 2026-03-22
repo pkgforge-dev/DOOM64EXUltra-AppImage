@@ -1,6 +1,6 @@
 # Maintainer: Vojket <vojket@protonmail.com>
 pkgname=sdl3_mixer
-pkgver=r2118.7d6e46a
+pkgver=r2250.092fafa
 pkgrel=1
 pkgdesc="A simple multi-channel audio mixer (Version 3)"
 arch=('x86_64' 'aarch64')
