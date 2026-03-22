@@ -13,14 +13,15 @@ pacman -Syu --noconfirm \
     pipewire-audio \
     pipewire-jack  \
     portmidi       \
-    sdl3
+    sdl3           \
+    sdl3_mixer
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package
+#make-aur-package
 #make-aur-package sdl3_mixer-git
 
 # If the application needs to be manually built that has to be done down here
