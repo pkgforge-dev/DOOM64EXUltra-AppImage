@@ -1,4 +1,4 @@
-#!/bin/false
+#!/bin/sh
 dir=${XDG_LOCAL_HOME:-~/.local/share}/doom64ex-ultra
 mkdir -p "$dir"
 cd "$dir"
