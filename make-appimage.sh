@@ -13,8 +13,6 @@ export DEPLOY_PIPEWIRE=1
 # Deploy dependencies
 quick-sharun ./AppDir/bin/DOOM64EXUltra /usr/lib/libfluidsynth.so*
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
