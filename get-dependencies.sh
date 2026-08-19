@@ -20,7 +20,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of DOOM64EXUltra..."
+echo "Building DOOM64EXUltra..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/StevenSYS/DOOM64EXUltra"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
