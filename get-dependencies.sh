@@ -12,7 +12,6 @@ pacman -Syu --noconfirm \
     pipewire-audio \
     pipewire-jack  \
     portmidi       \
-    sdl3           \
     sdl3_mixer
 
 echo "Installing debloated packages..."
@@ -27,10 +26,6 @@ git clone --recursive --depth 1 "$REPO" ./DOOM64EXUltra
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./DOOM64EXUltra
-cmake . \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_C_FLAGS="-Wno-implicit-function-declaration"
-make -j$(nproc)
-mv -v DOOM64EXUltra ../AppDir/bin
-mv -v doom64ex-ultra.wad ../AppDir/bin
+cmake -S ./DOOM64EXUltra -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Wno-implicit-function-declaration"
+cmake --build build -j$(nproc)
+mv -v build/DOOM64EXUltra build/doom64ex-ultra.wad ./AppDir/bin
