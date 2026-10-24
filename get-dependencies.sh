@@ -28,4 +28,4 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cmake -S ./DOOM64EXUltra -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Wno-implicit-function-declaration"
 cmake --build build -j$(nproc)
-mv -v build/DOOM64EXUltra build/doom64ex-ultra.wad ./AppDir/bin
+mv -v ./build/DOOM64EXUltra ./DOOM64EXUltra/doom64ex-ultra.wad ./AppDir/bin
